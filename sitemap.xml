@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://spiritlinkmassage.github.io/about/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Multilingual Alternates -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://spiritlinkmassage.github.io/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://spiritlinkmassage.github.io/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spiritlinkmassage.github.io/about/" />
+
+    <!-- Service Images for Rich Visual Discovery -->
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/massage.png</image:loc>
+      <image:title>Remedial Deep Tissue &amp; Relaxation Massage</image:title>
+      <image:caption>Professional remedial massage therapy at Spirit Link Chatswood with HICAPS instant claiming.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/acupuncture.png</image:loc>
+      <image:title>Traditional Chinese Medicine (TCM) Acupuncture</image:title>
+      <image:caption>Targeted acupuncture therapy for chronic pain relief and wellness restoration.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/reflexology.png</image:loc>
+      <image:title>Foot Reflexology &amp; Pressure Point Therapy</image:title>
+      <image:caption>Vitality pressure point foot massage therapy at Westfield Chatswood.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/cupping.png</image:loc>
+      <image:title>Traditional Warm Cupping Therapy</image:title>
+      <image:caption>Traditional cupping to stimulate circulation and relieve muscular stiffness.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/giftCard.png</image:loc>
+      <image:title>Spirit Link Wellness Gift Cards</image:title>
+      <image:caption>Gift cards for remedial massage and acupuncture treatments in Chatswood.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/logo.png</image:loc>
+      <image:title>Spirit Link Massage &amp; Acupuncture Centre Logo</image:title>
+      <image:caption>Spirit Link Clinic Brand Mark.</image:caption>
+    </image:image>
+  </url>
+</urlset>

@@ -1,0 +1,46 @@
+# Robots.txt for Spirit Link Massage & Acupuncture Centre
+# Allow all major search engines and modern AI crawlers
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /api/
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Microsoft Bing
+User-agent: Bingbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+
+# OpenAI ChatGPT & Search
+User-agent: GPTBot
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI
+User-agent: Google-Extended
+Allow: /
+
+# Baidu & Yahoo
+User-agent: Baiduspider
+User-agent: Slurp
+Allow: /
+
+# Sitemap location
+Sitemap: https://spiritlinkmassage.github.io/about/sitemap.xml
