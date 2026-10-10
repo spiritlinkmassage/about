@@ -10,6 +10,9 @@ Disallow: /api/
 User-agent: Googlebot
 Allow: /
 
+User-agent: Googlebot-Image
+Allow: /
+
 # Microsoft Bing
 User-agent: Bingbot
 Allow: /
