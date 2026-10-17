@@ -10,7 +10,7 @@
     
     <!-- Multilingual Alternates -->
     <xhtml:link rel="alternate" hreflang="en" href="https://spiritlinkmassage.github.io/about/" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://spiritlinkmassage.github.io/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://spiritlinkmassage.github.io/about/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://spiritlinkmassage.github.io/about/" />
 
     <!-- Service Images for Rich Visual Discovery -->
@@ -43,6 +43,49 @@
       <image:loc>https://spiritlinkmassage.github.io/about/logo.png</image:loc>
       <image:title>Spirit Link Massage &amp; Acupuncture Centre Logo</image:title>
       <image:caption>Spirit Link Clinic Brand Mark.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://spiritlinkmassage.github.io/about/?lang=zh</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    
+    <!-- Multilingual Alternates -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://spiritlinkmassage.github.io/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://spiritlinkmassage.github.io/about/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spiritlinkmassage.github.io/about/" />
+
+    <!-- Service Images for Rich Visual Discovery -->
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/massage.png</image:loc>
+      <image:title>悉尼车士活专业中医推拿与深层肌肉理疗</image:title>
+      <image:caption>Spirit Link Chatswood 中医推拿理疗，支持 HICAPS 现场报销。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/acupuncture.png</image:loc>
+      <image:title>悉尼车士活传统中医针灸理疗</image:title>
+      <image:caption>针对慢性疼痛与经络调理的专业针灸治疗。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/reflexology.png</image:loc>
+      <image:title>传统足底穴位反射疗法</image:title>
+      <image:caption>Westfield Chatswood 舒缓足疗与穴位按压。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/cupping.png</image:loc>
+      <image:title>传统拔罐排湿理疗</image:title>
+      <image:caption>舒缓深层肌肉紧张与促进微循环的传统拔罐。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/giftCard.png</image:loc>
+      <image:title>Spirit Link 养生理疗礼品卡</image:title>
+      <image:caption>悉尼车士活推拿针灸护理礼品卡。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://spiritlinkmassage.github.io/about/logo.png</image:loc>
+      <image:title>Spirit Link 标志</image:title>
+      <image:caption>Spirit Link 品牌标识。</image:caption>
     </image:image>
   </url>
 </urlset>

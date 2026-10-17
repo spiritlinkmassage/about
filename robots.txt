@@ -3,8 +3,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /private/
-Disallow: /api/
 
 # Google
 User-agent: Googlebot
