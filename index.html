@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https:; frame-src 'self' https://drive.google.com;" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; frame-src 'self' https://drive.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Clickjacking Defense (Fallback for static hosting where frame-ancestors header cannot be sent) -->
+    <style id="antiClickjack">body{display:none!important}</style>
+    <script>
+      if (self === top) {
+        var antiClickjack = document.getElementById('antiClickjack');
+        if (antiClickjack && antiClickjack.parentNode) antiClickjack.parentNode.removeChild(antiClickjack);
+      } else {
+        top.location = self.location;
+      }
+    </script>
     
     <!-- Primary Search Meta Tags -->
     <title>Spirit Link Massage &amp; Acupuncture Centre | Chatswood Sydney</title>
@@ -16,6 +28,7 @@
     <link rel="alternate" hreflang="en" href="https://spiritlinkmassage.github.io/about/" />
     <link rel="alternate" hreflang="zh" href="https://spiritlinkmassage.github.io/about/?lang=zh" />
     <link rel="alternate" hreflang="x-default" href="https://spiritlinkmassage.github.io/about/" />
+    <link rel="alternate" type="text/plain" href="./llms.txt" title="LLM context" />
     
     <!-- Search Engine Verification -->
     <meta name="google-site-verification" content="Xi3Sm8PVmXnRbYpAABcvfVhwPpnpcM1YwN4TWlgJE1U" />
@@ -51,7 +64,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Spirit Link" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://spiritlinkmassage.github.io/about/browserLogo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./browserLogo.png?v=2" />
 
     <!-- Theme Colors for Android Chrome & Safari Tab Tinting (Light & Dark Mode) -->
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFDF9" />
@@ -68,18 +81,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="image" href="./shop_front.jpg" fetchpriority="high" />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
 
     <!-- Favicon & Search Engine Site Icons (Google, Bing, Apple) -->
     <!-- Google Search requires icon to be a multiple of 48px square: 48x48, 96x96, 144x144, 192x192 -->
-    <link rel="icon" type="image/x-icon" href="https://spiritlinkmassage.github.io/about/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="48x48" href="https://spiritlinkmassage.github.io/about/favicon-48x48.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="https://spiritlinkmassage.github.io/about/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="144x144" href="https://spiritlinkmassage.github.io/about/favicon-144x144.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="https://spiritlinkmassage.github.io/about/favicon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="https://spiritlinkmassage.github.io/about/browserLogo.png" />
-    <link rel="shortcut icon" href="https://spiritlinkmassage.github.io/about/favicon.ico" />
-    <link rel="manifest" href="https://spiritlinkmassage.github.io/about/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2" />
+    <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png?v=2" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png?v=2" />
+    <link rel="icon" type="image/png" sizes="144x144" href="./favicon-144x144.png?v=2" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon-192x192.png?v=2" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./browserLogo.png?v=2" />
+    <link rel="shortcut icon" href="./favicon.ico?v=2" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <!-- Google Search Site Name Schema.org WebSite Structured Data -->
     <!-- Explicitly informs Google's Site Name algorithm of the official brand identity -->
@@ -117,6 +131,7 @@
       "telephone": "+61-2-9411-5861",
       "priceRange": "$$",
       "image": [
+        "https://spiritlinkmassage.github.io/about/shop_front.jpg",
         "https://spiritlinkmassage.github.io/about/giftCard.png",
         "https://spiritlinkmassage.github.io/about/massage.png",
         "https://spiritlinkmassage.github.io/about/acupuncture.png",
@@ -125,7 +140,7 @@
       ],
       "logo": {
         "@type": "ImageObject",
-        "url": "https://spiritlinkmassage.github.io/about/logo.png",
+        "url": "https://spiritlinkmassage.github.io/about/browserLogo.png",
         "width": "512",
         "height": "512"
       },
@@ -142,6 +157,7 @@
         "latitude": -33.7961,
         "longitude": 151.1831
       },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Spirit+Link+Massage+%26+Acupuncture+Centre+Westfield+Chatswood",
       "containedInPlace": {
         "@type": "ShoppingCenter",
         "name": "Westfield Chatswood",
@@ -213,6 +229,13 @@
       ],
       "paymentAccepted": ["Cash", "Credit Card", "EFTPOS", "HICAPS", "Visa", "Mastercard"],
       "currenciesAccepted": "AUD",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "4"
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Wellness & TCM Remedial Services (悉尼车士活中医理疗服务)",
@@ -287,13 +310,13 @@
       ]
     }
     </script>
-    <script type="module" crossorigin src="./assets/index-CPouKn8G.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-M0oDzQ_3.js">
-    <link rel="modulepreload" crossorigin href="./assets/vendor-misc-BIalwZul.js">
-    <link rel="modulepreload" crossorigin href="./assets/vendor-icons-Ctjf-j_D.js">
-    <link rel="modulepreload" crossorigin href="./assets/vendor-motion-DXQJ7d3u.js">
-    <link rel="modulepreload" crossorigin href="./assets/vendor-react-BfFDSb_P.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-Bxs8rGBL.css">
+    <script type="module" crossorigin src="./assets/index-DaWjbNJu.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-Dwys_PaA.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-icons-If9MR3zY.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-react-BuhADei1.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-motion-Dzlbhh4H.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-misc-DT_aTmUh.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-fWl2eNh2.css">
   </head>
   <body>
     <div id="root"></div>
